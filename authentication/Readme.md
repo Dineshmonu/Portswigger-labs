@@ -132,7 +132,7 @@ username=§invalid-username§&password=example§§
 5. When prompted for the verification code, manually change the URL to navigate to ``/my-account``. The lab is solved when the page loads.
 
 ## 2FA broken logic
-### Reference: [PortSwigger: 2FA broken logic](https://portswigger.net/web-security/authentication/password-based/lab-2fa-broken-logic)
+### Reference: [PortSwigger: 2FA broken logic](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-broken-logic)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -150,7 +150,7 @@ First make sure a MFA-code verification code is generated for user ``carlos`` by
 8. Click My account to solve the lab.
 
 ## Brute-forcing a stay-logged-in cookie
-### Reference: [PortSwigger: Brute-forcing a stay-logged-in cookie](https://portswigger.net/web-security/authentication/password-based/lab-brute-forcing-a-stay-logged-in-cookie)
+### Reference: [PortSwigger: Brute-forcing a stay-logged-in cookie](https://portswigger.net/web-security/authentication/other-mechanisms/lab-brute-forcing-a-stay-logged-in-cookie)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -182,7 +182,7 @@ base64(username+':'+md5HashOfPassword)
 10. When the attack is finished, the lab will be solved. Notice that only one request returned a response containing ``Update email``. The payload from this request is the valid ``stay-logged-in`` cookie for Carlos's account.
 
 ## Offline password cracking
-### Reference: [PortSwigger: Offline password cracking](https://portswigger.net/web-security/authentication/password-based/lab-offline-password-cracking)
+### Reference: [PortSwigger: Offline password cracking](https://portswigger.net/web-security/authentication/other-mechanisms/lab-offline-password-cracking)
 
 <!-- omit in toc -->
 ### Solution
@@ -206,7 +206,7 @@ carlos:26323c16d5f4dabff3bb136f2460a943
 9. Log in to the victim's account, go to the "My account" page, and delete their account to solve the lab.
 
 ## Password reset broken logic
-### Reference: [PortSwigger: Password reset broken logic](https://portswigger.net/web-security/authentication/password-based/lab-password-reset-broken-logic)
+### Reference: [PortSwigger: Password reset broken logic](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-broken-logic)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -223,7 +223,7 @@ This lab has a vulnerable password reset functionality. The link received by ema
 7. In your browser, log in to Carlos's account using the new password you just set. Click My account to solve the lab.
 
 ## Password reset poisoning via middleware
-### Reference: [PortSwigger: Password reset poisoning via middleware](https://portswigger.net/web-security/authentication/password-based/lab-password-reset-poisoning-via-middleware)
+### Reference: [PortSwigger: Password reset poisoning via middleware](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-poisoning-via-middleware)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -245,7 +245,7 @@ X-Forwarded-Host: your-exploit-server-id.web-security-academy.net
 9. Log in to Carlos's account using the new password to solve the lab.
 
 ## Password brute-force via password change
-### Reference: [PortSwigger: Password brute-force via password change](https://portswigger.net/web-security/authentication/password-based/lab-password-brute-force-via-password-change)
+### Reference: [PortSwigger: Password brute-force via password change](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-brute-force-via-password-change)
 
 <!-- omit in toc -->
 ### Solution
