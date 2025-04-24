@@ -1,6 +1,6 @@
 # Access Control
 
-## Summary of Topics
+## Section Outline
 - [Unprotected admin functionality](#unprotected-admin-functionality)
 - [Unprotected admin functionality with unpredictable URL](#unprotected-admin-functionality-with-unpredictable-url)
 - [User role controlled by request parameter](#user-role-controlled-by-request-parameter)
