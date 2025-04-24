@@ -22,7 +22,7 @@
 - [Lab: SQL injection vulnerability allowing login bypass](#lab-sql-injection-vulnerability-allowing-login-bypass)
   
 ## SQL injection UNION attack, determining the number of columns returned by the query
-Reference: https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns
+### Reference: [PortSwigger: SQL injection UNION attack: Determining the number of columns](https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -42,7 +42,7 @@ The ``category`` parameter is vulnerable to SQL Injection, use a **UNION** attac
 4. Continue adding null values until the error disappears and the response includes additional content containing the null values.
 
 ## SQL injection UNION attack, finding a column containing text
-Reference: https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text
+### Reference: [PortSwigger: SQL injection UNION attack: Finding a column containing text](https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -62,7 +62,7 @@ The ``category`` parameter is vulnerable to SQL Injection, combine the previous 
 4. If an error occurs, move on to the next null and try that instead.
 
 ## SQL injection UNION attack, retrieving data from other tables
-Reference: https://portswigger.net/web-security/sql-injection/union-attacks/lab-retrieve-data-from-other-tables
+### Reference: [PortSwigger: SQL injection UNION attack: Retrieving data from other tables](https://portswigger.net/web-security/sql-injection/union-attacks/lab-retrieve-data-from-other-tables)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -85,7 +85,7 @@ Use the previous payloads to retrieve the number of columns and which columns co
 4. Verify that the application's response contains usernames and passwords.
 
 ## SQL injection UNION attack, retrieving multiple values in a single column
-Reference: https://portswigger.net/web-security/sql-injection/union-attacks/lab-retrieve-multiple-values-in-single-column
+### Reference: [PortSwigger: SQL injection UNION attack: Retrieving multiple values in a single column](https://portswigger.net/web-security/sql-injection/union-attacks/lab-retrieve-multiple-values-in-single-column)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -108,7 +108,7 @@ The original query returns two colums, but only one contains text. Multiple valu
 4. Verify that the application's response contains usernames and passwords.
 
 ## SQL injection attack, querying the database type and version on Oracle
-Reference: https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-oracle
+### Reference: [PortSwigger: SQL injection: Querying the database type and version on Oracle](https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-oracle)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -130,7 +130,7 @@ Be aware that on Oracle databases every ``SELECT`` statement must specify a tabl
 ```
 
 ## SQL injection attack, querying the database type and version on MySQL and Microsoft
-Reference: https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-mysql-microsoft
+### Reference: [PortSwigger: SQL injection: Querying the database type and version on MySQL and Microsoft](https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-mysql-microsoft)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -152,7 +152,7 @@ This lab is similar to the ones before. The only difference is that it is mandat
 ```
 
 ## SQL injection attack, listing the database contents on non-Oracle databases
-Reference: https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-non-oracle
+### Reference: [PortSwigger: SQL injection: Listing the database contents on non-Oracle databases](https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -190,7 +190,7 @@ docker run -it --rm secsi/sqlmap -u "<target_url>" -D public -T <users_table_nam
 8. Find the password for the ``administrator`` user, and use it to log in.
 
 ## SQL injection attack, listing the database contents on Oracle
-Reference: https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-oracle
+### Reference: [PortSwigger: SQL injection: Listing the database contents on Oracle](https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-oracle)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -226,7 +226,7 @@ docker run -it --rm secsi/sqlmap -u "<target_url>" -T <users_table_name> --dump
 8. Find the password for the ``administrator`` user, and use it to log in.
 
 ## Blind SQL injection with conditional responses
-Reference: https://portswigger.net/web-security/sql-injection/blind/lab-conditional-responses
+### Reference: [PortSwigger: Blind SQL injection with conditional responses](https://portswigger.net/web-security/sql-injection/blind/lab-conditional-responses)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -243,7 +243,7 @@ docker run -it --rm secsi/sqlmap -u "<target_url>" --cookie="TrackingId=1" -p "T
 The solution is **extremely long** and it has not been copied, see the reference link.
 
 ## Blind SQL injection with conditional errors
-Reference: https://portswigger.net/web-security/sql-injection/blind/lab-conditional-errors
+### Reference: [PortSwigger: Blind SQL injection with conditional errors](https://portswigger.net/web-security/sql-injection/blind/lab-conditional-errors)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -264,7 +264,7 @@ docker run -it --rm secsi/sqlmap -u "<target_url>" --cookie="TrackingId=1" -p "T
 The solution is **extremely long** and it has not been copied, see the reference link.
 
 ## Blind SQL injection with time delays
-Reference: https://acd71f421faa06c4c0601db1008a000e.web-security-academy.net/
+### Reference: [PortSwigger: Blind SQL injection with time delays](https://portswigger.net/web-security/sql-injection/blind/lab-time-delays)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -280,7 +280,7 @@ TrackingId=x'||pg_sleep(10)--
 3. Submit the request and observe that the application takes 10 seconds to respond.
 
 ## Blind SQL injection with time delays and information retrieval
-Reference: https://portswigger.net/web-security/sql-injection/blind/lab-time-delays-info-retrieval
+### Reference: [PortSwigger: Blind SQL injection with time delays and information retrieval](https://portswigger.net/web-security/sql-injection/blind/lab-time-delays-and-info-retrieval)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -297,7 +297,7 @@ docker run -it --rm secsi/sqlmap -u "<target_url>" --cookie="TrackingId=1" -p "T
 The solution is **extremely long** and it has not been copied, see the reference link.
 
 ## Blind SQL injection with out-of-band interaction
-Reference: https://portswigger.net/web-security/sql-injection/blind/lab-out-of-band
+### Reference: [PortSwigger: Blind SQL injection with out-of-band interaction](https://portswigger.net/web-security/sql-injection/blind/lab-out-of-band-interaction)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -313,7 +313,7 @@ TrackingId=x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encodin
 The solution described here is sufficient simply to trigger a DNS lookup and so solve the lab. In a real-world situation, you would use Burp Collaborator client to verify that your payload had indeed triggered a DNS lookup and potentially exploit this behavior to exfiltrate sensitive data from the application. We'll go over this technique in the next lab.
 
 ## Blind SQL injection with out-of-band data exfiltration
-Reference: https://portswigger.net/web-security/sql-injection/blind/lab-out-of-band-data-exfiltration
+### Reference: [PortSwigger: Blind SQL injection with out-of-band data exfiltration](https://portswigger.net/web-security/sql-injection/blind/lab-out-of-band-data-exfiltration)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -333,7 +333,7 @@ TrackingId=x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encodin
 7. In your browser, click "My account" to open the login page. Use the password to log in as the ``administrator`` user.
 
 ## SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
-Reference: https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data
+### Reference: [PortSwigger: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data](https://portswigger.net/web-security/sql-injection/in-band/lab-retrieve-hidden-data)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -346,7 +346,7 @@ In this lab the payload is quite easy, the goal is to retrieve hidden items. See
 3. Submit the request, and verify that the response now contains additional items.
 
 ## Lab: SQL injection vulnerability allowing login bypass
-Reference: https://portswigger.net/web-security/sql-injection/lab-login-bypass
+### Reference: [PortSwigger: SQL injection vulnerability allowing login bypass](https://portswigger.net/web-security/sql-injection/login-bypass/lab-login-bypass)
 
 <!-- omit in toc -->
 ### Quick Solution
