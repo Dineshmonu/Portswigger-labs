@@ -280,7 +280,7 @@ TrackingId=x'||pg_sleep(10)--
 3. Submit the request and observe that the application takes 10 seconds to respond.
 
 ## Blind SQL injection with time delays and information retrieval
-### Reference: [PortSwigger: Blind SQL injection with time delays and information retrieval](https://portswigger.net/web-security/sql-injection/blind/lab-time-delays-and-info-retrieval)
+### Reference: [PortSwigger: Blind SQL injection with time delays and information retrieval](https://portswigger.net/web-security/sql-injection/blind/lab-time-delays-info-retrieval)
 
 <!-- omit in toc -->
 ### Quick Solution
