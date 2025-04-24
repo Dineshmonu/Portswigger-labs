@@ -2,7 +2,7 @@
 # Authentication
 
 <!-- omit in toc -->
-## Table of Contents
+## Section Outline
 
 - [Username enumeration via different responses](#username-enumeration-via-different-responses)
 - [Username enumeration via subtly different responses](#username-enumeration-via-subtly-different-responses)
