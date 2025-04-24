@@ -346,7 +346,7 @@ In this lab the payload is quite easy, the goal is to retrieve hidden items. See
 3. Submit the request, and verify that the response now contains additional items.
 
 ## Lab: SQL injection vulnerability allowing login bypass
-### Reference: [PortSwigger: SQL injection vulnerability allowing login bypass](https://portswigger.net/web-security/sql-injection/login-bypass/lab-login-bypass)
+### Reference: [PortSwigger: SQL injection vulnerability allowing login bypass](https://portswigger.net/web-security/sql-injection/lab-login-bypass)
 
 <!-- omit in toc -->
 ### Quick Solution
