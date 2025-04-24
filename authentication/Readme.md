@@ -121,7 +121,7 @@ username=§invalid-username§&password=example§§
 8. Wait for a minute to allow the account lock to reset. Log in using the username and password that you identified and access the user account page to solve the lab.
 
 ## 2FA simple bypass
-### Reference: [PortSwigger: 2FA simple bypass](https://portswigger.net/web-security/authentication/password-based/lab-2fa-simple-bypass)
+### Reference: [PortSwigger: 2FA simple bypass](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-simple-bypass)
 
 <!-- omit in toc -->
 ### Solution
