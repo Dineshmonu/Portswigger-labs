@@ -289,7 +289,7 @@ There is a *WAF* to protect the website from XSS. This firewall blocks HTML tags
 15. Click "Store" and "Deliver exploit to victim".
 
 ## Reflected XSS into HTML context with all tags blocked except custom ones
-### Reference: [PortSwigger: Reflected XSS into HTML context with all tags blocked except custom ones](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-custom-tags)
+### Reference: [PortSwigger: Reflected XSS into HTML context with all tags blocked except custom ones](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-with-all-standard-tags-blocked)
 
 <!-- omit in toc -->
 ### Quick Solution
