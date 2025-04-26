@@ -96,7 +96,7 @@ product?productId=1&storeId="></select><img%20src=1%20onerror=alert(1)>
 The value of the ``src`` attribute is invalid and throws an error. This triggers the ``onerror`` event handler, which then calls the ``alert()`` function. As a result, the payload is executed whenever the user's browser attempts to load the page containing your malicious post.
 
 ## DOM XSS in jQuery anchor href attribute sink using location.search source
-### Reference: [PortSwigger: DOM XSS in jQuery anchor href attribute sink using location.search source](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-jquery-href-attribute)
+### Reference: [PortSwigger: DOM XSS in jQuery anchor href attribute sink using location.search source](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-jquery-href-attribute-sink)
 
 <!-- omit in toc -->
 ### Solution
