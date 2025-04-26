@@ -141,7 +141,7 @@ A payload that works is the following:
 4. Click search
 
 ## Reflected DOM XSS
-### Reference: [PortSwigger: Reflected DOM XSS](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-reflected-dom-xss)
+### Reference: [PortSwigger: Reflected DOM XSS](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-dom-xss-reflected)
 
 <!-- omit in toc -->
 ### Quick Solution
