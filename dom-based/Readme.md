@@ -82,3 +82,21 @@ https://your-lab-id.web-security-academy.net/post?postId=4&url=https://your-expl
 ```
 3. Store the exploit and deliver it to the victim.
 The original source of the ``iframe`` matches the URL of one of the product pages, except there is a JavaScript payload added to the end. When the ``iframe`` loads for the first time, the browser temporarily opens the malicious URL, which is then saved as the value of the ``lastViewedProduct`` cookie. The onload event handler ensures that the victim is then immediately redirected to the home page, unaware that this manipulation ever took place. While the victim's browser has the poisoned cookie saved, loading the home page will cause the payload to execute.
+
+## Exploiting DOM clobbering to enable XSS
+### Reference: [PortSwigger: Exploiting DOM clobbering to enable XSS](https://portswigger.net/web-security/dom-based/dom-clobbering/lab-exploiting-dom-clobbering-to-enable-xss)
+
+<!-- omit in toc -->
+### Solution
+1. Go to one of the blog posts and create a comment containing the following anchors:
+
+    ```html
+    <a id=defaultAvatar><a id=defaultAvatar name=avatar href="cid:&quot;onerror=alert(1)//">
+    ```
+
+2. Return to the blog post and create a second comment containing any random text.
+
+3. The next time the page loads, the `alert()` is called.
+
+
+
