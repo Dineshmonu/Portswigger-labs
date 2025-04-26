@@ -105,7 +105,7 @@ The value of the ``src`` attribute is invalid and throws an error. This triggers
 3. Change ``returnPath`` to ``javascript:alert(document.cookie)``, then hit enter and click "back".
 
 ## DOM XSS in jQuery selector sink using a hashchange event
-### Reference: [PortSwigger: DOM XSS in jQuery selector sink using a hashchange event](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-jquery-selector-hashchange)
+### Reference: [PortSwigger: DOM XSS in jQuery selector sink using a hashchange event](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-jquery-selector-hash-change-event)
 
 <!-- omit in toc -->
 ### Solution
