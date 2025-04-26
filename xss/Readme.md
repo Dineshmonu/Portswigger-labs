@@ -66,7 +66,7 @@ The requests can also be proxied to Burp by adding ``--proxy <proxy_url>``
 3. Break out of the img attribute by searching for: ``"><svg onload=alert(1)>``
 
 ## DOM XSS in document.write sink using source location.search inside a select element
-### Reference: [PortSwigger: DOM XSS in document.write sink using source location.search inside a select element](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-document-write-sink-inside-select)
+### Reference: [PortSwigger: DOM XSS in document.write sink using source location.search inside a select element](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-document-write-sink-inside-select-element)
 
 <!-- omit in toc -->
 ### Quick Solution
