@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# CORS
+# Cross-origin resource sharing (CORS)
 
 <!-- omit in toc -->
 ## Table of Contents
