@@ -167,7 +167,7 @@ An arithmetic operator (in this case the subtraction operator) is then used to s
 ```
 
 ## Stored DOM XSS
-### Reference: [PortSwigger: Stored DOM XSS](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-stored-dom-xss)
+### Reference: [PortSwigger: Stored DOM XSS](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-dom-xss-stored)
 
 <!-- omit in toc -->
 ### Solution
