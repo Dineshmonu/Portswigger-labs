@@ -335,7 +335,7 @@ https://your-lab-id.web-security-academy.net/?search=%22%3E%3Csvg%3E%3Canimatetr
 ```
 
 ## Reflected XSS into attribute with angle brackets HTML-encoded
-### Reference: [PortSwigger: Reflected XSS into attribute with angle brackets HTML-encoded](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-attribute-angle-brackets)
+### Reference: [PortSwigger: Reflected XSS into attribute with angle brackets HTML-encoded](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-attribute-angle-brackets-html-encoded)
 
 <!-- omit in toc -->
 ### Solution
@@ -345,7 +345,7 @@ https://your-lab-id.web-security-academy.net/?search=%22%3E%3Csvg%3E%3Canimatetr
 4. Verify the technique worked by right-clicking, selecting "Copy URL", and pasting the URL in your browser. When you move the mouse over the injected element it should trigger an alert.
 
 ## Stored XSS into anchor href attribute with double quotes HTML-encoded
-### Reference: [PortSwigger: Stored XSS into anchor href attribute with double quotes HTML-encoded](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-anchor-href-double-quotes)
+### Reference: [PortSwigger: Stored XSS into anchor href attribute with double quotes HTML-encoded](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-href-attribute-double-quotes-html-encoded)
 
 <!-- omit in toc -->
 ### Solution
@@ -375,7 +375,7 @@ This sets the ``X`` key as an access key for the whole page. When a user presses
  - On Linux: ``Alt+X``
 
 ## Reflected XSS into a JavaScript string with single quote and backslash escaped
-### Reference: [PortSwigger: Reflected XSS into a JavaScript string with single quote and backslash escaped](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-single-quote-backslash)
+### Reference: [PortSwigger: Reflected XSS into a JavaScript string with single quote and backslash escaped](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-single-quote-backslash-escaped)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -406,7 +406,7 @@ docker run -it --rm secsi/dalfox url "<lab_url>/?search=thelicato> -w 10
 4. Verify the technique worked by right clicking, selecting "Copy URL", and pasting the URL in your browser. When you load the page it should trigger an alert.
 
 ## Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped
-### Reference: [PortSwigger: Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-encoded-quotes)
+### Reference: [PortSwigger: Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-angle-brackets-double-quotes-encoded-single-quotes-escaped)
 
 <!-- omit in toc -->
 ### Solution
@@ -418,7 +418,7 @@ docker run -it --rm secsi/dalfox url "<lab_url>/?search=thelicato> -w 10
 6. Verify the technique worked by right clicking, selecting "Copy URL", and pasting the URL in your browser. When you load the page it should trigger an alert.
 
 ## Stored XSS into onclick event with angle brackets and double quotes HTML-encoded and single quotes and backslash escaped
-### Reference: [PortSwigger: Stored XSS into onclick event with angle brackets and double quotes HTML-encoded and single quotes and backslash escaped](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-onclick-event-encoded)
+### Reference: [PortSwigger: Stored XSS into onclick event with angle brackets and double quotes HTML-encoded and single quotes and backslash escaped](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-onclick-event-angle-brackets-double-quotes-html-encoded-single-quotes-backslash-escaped)
 
 <!-- omit in toc -->
 ### Solution
@@ -429,7 +429,7 @@ docker run -it --rm secsi/dalfox url "<lab_url>/?search=thelicato> -w 10
 5. Verify the technique worked by right clicking, selecting "Copy URL", and pasting the URL in your browser. Clicking the name above your comment should trigger an alert.
 
 ## Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped
-### Reference: [PortSwigger: Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-template-literal-escaped)
+### Reference: [PortSwigger: Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-template-literal-angle-brackets-single-double-quotes-backslash-backticks-escaped)
 
 <!-- omit in toc -->
 ### Quick Solution
@@ -446,7 +446,7 @@ ${alert(1)}
 4. Verify the technique worked by right clicking, selecting "Copy URL", and pasting the URL in your browser. When you load the page it should trigger an alert.
 
 ## Reflected XSS protected by CSP, with dangling markup attack
-### Reference: [PortSwigger: Reflected XSS protected by CSP, with dangling markup attack](https://portswigger.net/web-security/cross-site-scripting/content-security-policy/lab-csp-with-dangling-markup)
+### Reference: [PortSwigger: Reflected XSS protected by CSP, with dangling markup attack](https://portswigger.net/web-security/cross-site-scripting/content-security-policy/lab-very-strict-csp-with-dangling-markup-attack)
 
 <!-- omit in toc -->
 ### Solution
