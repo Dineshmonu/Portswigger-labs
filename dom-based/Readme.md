@@ -84,7 +84,7 @@ https://your-lab-id.web-security-academy.net/post?postId=4&url=https://your-expl
 The original source of the ``iframe`` matches the URL of one of the product pages, except there is a JavaScript payload added to the end. When the ``iframe`` loads for the first time, the browser temporarily opens the malicious URL, which is then saved as the value of the ``lastViewedProduct`` cookie. The onload event handler ensures that the victim is then immediately redirected to the home page, unaware that this manipulation ever took place. While the victim's browser has the poisoned cookie saved, loading the home page will cause the payload to execute.
 
 ## Exploiting DOM clobbering to enable XSS
-### Reference: [PortSwigger: Exploiting DOM clobbering to enable XSS](https://portswigger.net/web-security/dom-based/dom-clobbering/lab-exploiting-dom-clobbering-to-enable-xss)
+### Reference: [PortSwigger: Exploiting DOM clobbering to enable XSS](https://portswigger.net/web-security/dom-based/dom-clobbering/lab-dom-xss-exploiting-dom-clobbering)
 
 <!-- omit in toc -->
 ### Solution
@@ -114,5 +114,41 @@ The page imports a JavaScript file `loadCommentsWithDomPurify.js` containing:
 ```javascript
 let defaultAvatar = window.defaultAvatar || {avatar: '/resources/images/avatarDefault.svg'}
 
+## Clobbering DOM attributes to bypass HTML filters
+### Reference: [PortSwigger: Clobbering DOM attributes to bypass HTML filters](https://portswigger.net/web-security/dom-based/dom-clobbering/lab-dom-clobbering-attributes-to-bypass-html-filters)
+
+<!-- omit in toc -->
+### Solution
+1. Go to one of the blog posts and create a comment containing the following HTML:
+
+    ```html
+    <form id=x tabindex=0 onfocus=print()><input id=attributes>
+    ```
+
+2. Go to the exploit server and add the following `iframe` to the body:
+
+    ```html
+    <iframe src="https://YOUR-LAB-ID.web-security-academy.net/post?postId=3" onload="setTimeout(()=>this.src=this.src+'#x',500)">
+    ```
+
+    - Replace `YOUR-LAB-ID` with your lab ID.
+    - Make sure the `postId=3` matches the post ID of the blog post you injected the HTML into in step 1.
+
+3. Store the exploit and deliver it to the victim.
+
+4. The next time the page loads, the `print()` function is called.
+
+### Understanding the Vulnerability:
+- The library uses the `attributes` property to filter HTML attributes. However, it is still possible to **clobber** the `attributes` property itself, causing the length to be `undefined`.
+- This clobbering allows you to inject any attributes you want into the form element.
+- In this case, you use the `onfocus` attribute to smuggle the `print()` function into the form element.
+
+### Exploit Explanation:
+- When the victim loads the page, the comment you injected contains a form with the `onfocus` attribute containing `print()`.
+- The iframe added in the exploit page loads the target post (post ID = 3) and then, after a 500ms delay, adds the `#x` fragment to the URL. This delay ensures that the comment containing the injection is loaded before the JavaScript is executed.
+- The delay allows the browser to focus on the element with the ID `x` (which is the form you created), triggering the `onfocus` event and calling the `print()` function.
+
+### Result:
+- The `print()` function is executed, demonstrating the successful bypass of the HTML filter using DOM attribute clobbering.
 
 
