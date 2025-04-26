@@ -113,6 +113,7 @@ The page imports a JavaScript file `loadCommentsWithDomPurify.js` containing:
 
 ```javascript
 let defaultAvatar = window.defaultAvatar || {avatar: '/resources/images/avatarDefault.svg'}
+```
 
 ## Clobbering DOM attributes to bypass HTML filters
 ### Reference: [PortSwigger: Clobbering DOM attributes to bypass HTML filters](https://portswigger.net/web-security/dom-based/dom-clobbering/lab-dom-clobbering-attributes-to-bypass-html-filters)
