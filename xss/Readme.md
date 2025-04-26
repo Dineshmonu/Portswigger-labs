@@ -261,7 +261,7 @@ function handleResponse() {
 This will make anyone who views the comment issue a POST request to change their email address to ``test@test.com``.
 
 ## Reflected XSS into HTML context with most tags and attributes blocked
-### Reference: [PortSwigger: Reflected XSS into HTML context with most tags and attributes blocked](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-most-tags-blocked)
+### Reference: [PortSwigger: Reflected XSS into HTML context with most tags and attributes blocked](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-with-most-tags-and-attributes-blocked)
 
 <!-- omit in toc -->
 ### Quick Solution
