@@ -97,6 +97,22 @@ The original source of the ``iframe`` matches the URL of one of the product page
 2. Return to the blog post and create a second comment containing any random text.
 
 3. The next time the page loads, the `alert()` is called.
+   
+4. **Understanding the DOM clobbering vulnerability:**
+   - The `defaultAvatar` object is implemented using this dangerous pattern containing the logical OR operator (`||`) in conjunction with a global variable. This makes it vulnerable to **DOM clobbering**.
+   - You can clobber this object using anchor tags. Creating two anchors with the same `id=defaultAvatar` causes them to be grouped in a DOM collection. The `name="avatar"` attribute in the second anchor will **clobber** the `avatar` property with the contents of the `href` attribute.
+   - Notice that the site uses the `DOMPurify` filter in an attempt to reduce DOM-based vulnerabilities. However, **DOMPurify** allows the use of the `cid:` protocol, which does not URL-encode double quotes. This allows you to inject an encoded double-quote (`"`) that will be decoded at runtime.
+   - As a result, the injection described above will cause the `defaultAvatar` variable to be assigned the clobbered property `{avatar: 'cid:"onerror=alert(1)//'}` the next time the page is loaded.
+   
+5. **Triggering the XSS:**
+   - When you make a second post, the browser uses the newly-clobbered global variable, which smuggles the payload in the `onerror` event handler and triggers the `alert()`.
+
+
+### Vulnerable Code:
+The page imports a JavaScript file `loadCommentsWithDomPurify.js` containing:
+
+```javascript
+let defaultAvatar = window.defaultAvatar || {avatar: '/resources/images/avatarDefault.svg'}
 
 
 
