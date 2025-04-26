@@ -311,7 +311,7 @@ location = 'https://your-lab-id.web-security-academy.net/?search=%3Cxss+id%3Dx+o
 This injection creates a custom tag with the ID ``x``, which contains an ``onfocus`` event handler that triggers the ``alert`` function. The hash at the end of the URL focuses on this element as soon as the page is loaded, causing the ``alert`` payload to be called.
 
 ## Reflected XSS with some SVG markup allowed
-### Reference: [PortSwigger: Reflected XSS with some SVG markup allowed](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-svg-markup-allowed)
+### Reference: [PortSwigger: Reflected XSS with some SVG markup allowed](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-some-svg-markup-allowed)
 
 <!-- omit in toc -->
 ### Solution
