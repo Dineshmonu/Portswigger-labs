@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# Dreictory traversal
+# Path traversal
 
 <!-- omit in toc -->
 ## Table of Contents
